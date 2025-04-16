@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Professor/Monitor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.0.7/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      html {
+        background-color: #111827;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen text-gray-200 p-6">
+    <!-- Cabeçalho com data e hora -->
+    <div class="mb-6 text-center">
+      <h1 class="text-3xl font-bold mb-2">Chamada da Turma - Programação Web</h1>
+      <p class="text-gray-400">Data: 16/04/2025 | Hora: 14:00</p>
+    </div>
+
+    <!-- Lista de Alunos -->
+    <div class="overflow-x-auto">
+      <table class="table w-full bg-gray-800 rounded-xl">
+        <thead>
+          <tr class="text-gray-300">
+            <th>Nome</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ana Souza</td>
+            <td><input type="checkbox" checked class="checkbox checkbox-success" /></td>
+          </tr>
+          <tr>
+            <td>Bruno Lima</td>
+            <td><input type="checkbox" class="checkbox checkbox-error" /></td>
+          </tr>
+          <tr>
+            <td>Carla Dias</td>
+            <td><input type="checkbox" checked class="checkbox checkbox-success" /></td>
+          </tr>
+          <tr>
+            <td>Daniel Rocha</td>
+            <td><input type="checkbox" class="checkbox checkbox-error" /></td>
+          </tr>
+          <tr>
+            <td>Eduarda Martins</td>
+            <td><input type="checkbox" checked class="checkbox checkbox-success" /></td>
+          </tr>
+          <tr>
+            <td>Fábio Teixeira</td>
+            <td><input type="checkbox" checked class="checkbox checkbox-success" /></td>
+          </tr>
+          <tr>
+            <td>Gabriela Torres</td>
+            <td><input type="checkbox" class="checkbox checkbox-error" /></td>
+          </tr>
+          <tr>
+            <td>Henrique Silva</td>
+            <td><input type="checkbox" checked class="checkbox checkbox-success" /></td>
+          </tr>
+          <tr>
+            <td>Isabela Nunes</td>
+            <td><input type="checkbox" checked class="checkbox checkbox-success" /></td>
+          </tr>
+          <tr>
+            <td>João Pedro</td>
+            <td><input type="checkbox" class="checkbox checkbox-error" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Conteúdo da Aula -->
+    <div class="mt-6 bg-gray-800 p-4 rounded-xl">
+      <h2 class="text-xl font-semibold mb-2">Conteúdo da Aula</h2>
+      <p class="text-gray-300">Hoje estudamos os principais comandos de repetição em JavaScript: <strong>for</strong>, <strong>while</strong> e <strong>do...while</strong>. Também criamos exemplos práticos de contadores e loops infinitos.</p>
+    </div>
+
+    <div class="text-center py-4 px-6">
+        <button class="btn btn-primary w-64 text-xl">Salvar</button>
+      </div>
+
+  </body>
+</html>

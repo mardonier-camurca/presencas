@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Sistema de Presenças</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.0.7/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      html {
+        background-color: #111827;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col items-center justify-center text-gray-200">
+    <!-- Tela de Login -->
+    <div id="login-screen" class="w-full max-w-sm p-6 rounded-2xl shadow-xl bg-gray-800">
+      <h2 class="text-2xl font-bold mb-6 text-center">Acesso ao Sistema</h2>
+      <form id="login-form" class="flex flex-col gap-4">
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text text-gray-300">Tipo de Acesso</span>
+          </label>
+          <select id="tipo-acesso" class="select select-bordered bg-gray-700 text-white border-gray-600">
+            <option value="professor">Sou professor ou monitor</option>
+            <option value="aluno">Sou aluno</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text text-gray-300">Email</span>
+          </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="seuemail@exemplo.com"
+            class="input input-bordered bg-gray-700 text-white border-gray-600"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text text-gray-300">Senha</span>
+          </label>
+          <input
+            type="password"
+            id="senha"
+            placeholder="••••••••"
+            class="input input-bordered bg-gray-700 text-white border-gray-600"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary bg-gray-300 border-gray-700 hover:bg-gray-500">
+          Entrar
+        </button>
+        <div class="text-center text-sm text-gray-400 mt-2">
+          <p>Primeiro acesso?</p>
+          <div class="mt-1 flex flex-col gap-1">
+            <a href="#" class="hover:underline">Cadastrar como professor ou monitor</a>
+            <a href="#" class="hover:underline">Cadastrar como aluno</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
